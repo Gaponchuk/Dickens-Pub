@@ -1,0 +1,116 @@
+.header-content {
+  min-height: 100vh;
+  background-image: url('../img/header-content__bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 20px;
+  
+  &__top {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  &__top > .wrapper {
+    display: flex;
+    justify-content: space-between;
+//    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  &__work-hours {
+    position: relative;
+    max-width: 225px;
+    padding: 20px 0 20px 40px;
+    color: #fff;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 26px;
+      height: 26px;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    &::before {
+      background-image: url('../img/telephone.png');
+    }
+    
+    &::after {
+      bottom: 30px;
+      background-image: url('../img/clock.png');
+    }
+    
+    .telephone-link {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+  
+  &__weekdays,
+  &__weekend {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  &__information {
+    margin-top: 20vh;
+    text-align: center;
+  }
+  
+  &__title {
+    font-size: 150px;
+    color: #ebb771;
+    line-height: 105px;
+  }
+  
+  &__description {
+    margin: 0 auto;
+    max-width: 455px;
+    font-size: 24px;
+    color: #dbdbdb;
+    margin-bottom: 100px;
+  }
+  
+  .order-link {
+    background-color: #ebb771;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 24px;
+    color: #270f0a;
+    padding: 30px 50px;
+    cursor: pointer;
+    margin-bottom: 150px;
+    outline: none;
+    
+    &:hover {
+      background-color: #eda340;
+    }
+  }
+  
+  .button-scroll {
+    display: block;
+    position: relative;
+    margin: 100px auto auto;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    
+    &::before {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-image: url('../img/arrow-down.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

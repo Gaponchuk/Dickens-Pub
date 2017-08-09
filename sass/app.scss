@@ -1,0 +1,31 @@
+@import 'about-us';
+@import 'beer-line';
+@import 'beers';
+@import 'download';
+@import 'feedback';
+@import 'footer-content';
+@import 'form';
+@import 'header-content';
+@import 'item-filter';
+@import 'list-dishes';
+@import 'main-content';
+@import 'navigation';
+@import 'popular-food';
+@import 'shares';
+
+
+
+
+body, html {
+  height: 100%;
+  background-color: rgba(136, 135, 135, 0.52);
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+* {
+  outline: 1px solid #fdf;
+}
